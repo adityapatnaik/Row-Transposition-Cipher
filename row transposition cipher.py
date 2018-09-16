@@ -1,7 +1,10 @@
+
+#Aditya Patnaik
+#Row Transposition Cipher
+
+
 from collections import defaultdict
 import operator
-
-
 
 kei=list(input())
 text =list(input())
@@ -15,9 +18,6 @@ for j in range(len(kei)):
         if(text[i]=='\x00'): break
         k[kei[j]].append(text[i])    
 
-        
-    
-        
 li = []
 li = sorted(k.values())
 for i in li:
